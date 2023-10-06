@@ -1,0 +1,73 @@
+:root {
+  --color-theme: #023989;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  // font-family: Roboto;
+  font-family: Poppins;
+  color: var(--color-theme);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: darkcyan;
+  }
+
+  .gears {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .gear {
+      fill: var(--color-theme);
+      position: relative;
+    }
+
+    &.animate-type- {
+      &1 {
+        .gear-1 {
+          transform: translate(22px, 14px);
+        }
+
+        .gear-2 {
+          transform: translate(-20px, -30px);
+        }
+
+        .gear-3 {
+          transform: translate(8px, -60px);
+        }
+      }
+
+      &2 {
+        .gear-1 {
+          transform: translate(42px, 32px);
+        }
+
+        .gear-2 {
+          transform: translate(-8px, -50px);
+        }
+
+        .gear-3 {
+          transform: translate(-50px, -93px);
+        }
+      }
+    }
+  }
+}
